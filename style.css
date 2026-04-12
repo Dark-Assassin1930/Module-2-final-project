@@ -107,6 +107,16 @@ nav {
     padding-bottom: 4px;
 }
 
+.nav__logo--img {
+    width: 50px;
+}
+
+.nav__links {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
 .nav__link--after {
     position: absolute;
     left: 0;
@@ -216,19 +226,42 @@ header .row {
     align-items: center;
     justify-content: space-between;
 }
-
-h2.section__title {
     #features.section__title,
-     pricing.section__title {
+     #pricing.section__title {
         text-align: center;
     }
-    .section__title{
+
+
+    h2.section__title,
+    .section__title {
         font-size: 48px;
         font-weight: 900;
         line-height: 1.5;
         letter-spacing: 0.025em;
     }
+
+    .features {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .feature__row {
+          display: flex;
+    }
+
+    .feature { 
+        width: calc(100%/3);
+    }
+
+    .feature__img--wrapper {
+        width: 80px;
+        height: 80px;
+    }
        
+.header__email {
+    position: relative;
+    height: 68px;
+    display: flex;
+    justify-content: end;
 }
 
 .header__email--input {
@@ -288,10 +321,26 @@ QUALITY WORK ↓
  
 */
 
-.quality__img {
-z-index: 1;
- }
+img.quality__img {
+   z-index: 1;
+   position: relative;
+}
+
+figure.quality__img--wrapper{
+    position: relative;
+}
+
+.quality__img--wrapper,
+svg.quality__grid {
+    width: 80px;
+    position: absolute;
+    bottom: -10%;
+    left: 50%;
+}
+
+
 #quality .row {
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
