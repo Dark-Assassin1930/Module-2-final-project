@@ -1394,7 +1394,7 @@ footer {
   }
 }
 @media (max-width: 640px) {
-  .section__title {
+   .section__title {
     line-height: 1.25;
   }
   .container {
